@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-const Balls = () => {
+const App3D = () => {
     let camera, scene, renderer, material;
     let mouseX = 0, mouseY = 0;
 
@@ -22,7 +22,7 @@ const Balls = () => {
         const vertices = [];
         const sprite = new THREE.TextureLoader().load("/disc.png");
 
-        for (let i = 0; i < 10000; i++) {
+        for (let i = 0; i < 1000; i++) {
             const x = 2000 * Math.random() - 1000;
             const y = 2000 * Math.random() - 1000;
             const z = 2000 * Math.random() - 1000;
@@ -33,7 +33,7 @@ const Balls = () => {
         geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
 
         material = new THREE.PointsMaterial({
-            size: 35,
+            size: 50,
             sizeAttenuation: false,
             map: sprite,
             alphaTest: 0.5,
@@ -47,8 +47,8 @@ const Balls = () => {
         renderer = new THREE.WebGLRenderer();
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
 
+        document.getElementById("main").appendChild(renderer.domElement);
         document.body.style.touchAction = "none";
         document.body.addEventListener("pointermove", onPointerMove);
 
@@ -80,15 +80,15 @@ const Balls = () => {
     function render() {
         const time = Date.now() * 0.00005;
 
-        camera.position.x += (mouseX - camera.position.x) * 0.05;
-        camera.position.y += (-mouseY - camera.position.y) * 0.05;
+        camera.position.x += (mouseX - camera.position.x) * 0.007;
+        camera.position.y += (-mouseY - camera.position.y) * 0.007;
         camera.lookAt(scene.position);
 
         const h = (360 * (1.0 + time) % 360) / 360;
-        material.color.setHSL(h, 0.5, 0.5);
 
+        material.color.setHSL(h, 0.5, 0.5);
         renderer.render(scene, camera);
     }
 };
 
-export default Balls;
+export default App3D;
