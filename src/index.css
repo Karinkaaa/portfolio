@@ -1,14 +1,12 @@
+div {
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
+    width: 4px;
+    background-color: rgb(41, 44, 1);
 }
-::-webkit-scrollbar-button {
-    background: #ccc
-}
-::-webkit-scrollbar-track-piece {
-    background: #888
-}
+
 ::-webkit-scrollbar-thumb {
-    background: #eee
+    background-color: yellow;
 }

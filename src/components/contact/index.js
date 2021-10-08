@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, IconButton, makeStyles } from "@material-ui/core";
 import { GitHub, LinkedIn, Telegram } from "@material-ui/icons";
-import { GITHUB, LINKED_IN, TELEGRAM } from "../../links";
+import { GITHUB, LINKED_IN, TELEGRAM } from "../../utils/links";
 
 const useStyles = makeStyles(({
     root: {

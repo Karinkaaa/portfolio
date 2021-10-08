@@ -36,7 +36,12 @@ const useStyles = makeStyles(({
         fontWeight: 600,
         fontSize: 20,
         color: "#fff",
-        margin: 30
+        margin: 30,
+        transition: "1s",
+
+        "&:hover": {
+            transform: "scale(1.2)"
+        }
     }
 }));
 
