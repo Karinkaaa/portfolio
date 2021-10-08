@@ -1,17 +1,26 @@
 import React, { useEffect } from "react";
-import Background from "../background";
+import App3D from "../app3D";
+import AppBarComponent from "../components/appBar";
+import Title from "../components/title";
+import Skills from "../components/skills";
+import Projects from "../components/projects";
 
-function App() {
+const App = () => {
     useEffect(() => {
-        Background();
+        App3D();
     }, []);
 
     return (
         <div>
-            Hello, world!
-            <div id="busiha">my canvas</div>
+            <div id={"main"}>
+                <AppBarComponent/>
+                <Title/>
+            </div>
+
+            <Skills/>
+            <Projects/>
         </div>
     );
-}
+};
 
 export default App;
