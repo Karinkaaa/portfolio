@@ -11,10 +11,8 @@ const useStyles = makeStyles(({
         background: "linear-gradient(to right, #022323FF, #010C28FF);"
     },
     div: {
-        paddingTop: 50,
         display: "flex",
         flexFlow: "wrap",
-        justifyContent: "center"
     }
 }));
 

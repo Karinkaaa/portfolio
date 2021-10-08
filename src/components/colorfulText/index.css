@@ -17,7 +17,7 @@
 }
 
 .text:nth-child(5n + 2) {
-    stroke: #F0DB50;
+    stroke: #F7DF1F;
     -webkit-animation-delay: -2.4s;
     animation-delay: -2.4s;
 }
@@ -54,6 +54,7 @@
 
 .my-svg {
     margin-top: 8%;
+    margin-bottom: 8%;
     margin-left: 20%;
     dominant-baseline: hanging;
     width: 100%;

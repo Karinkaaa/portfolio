@@ -1,6 +1,6 @@
 const SkillItems = [
     {
-        link: "/javascript.svg",
+        link: "/javascript.png",
         title: "JavaScript",
         alt: "javascript"
     },

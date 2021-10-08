@@ -4,7 +4,7 @@ import { CardContent, makeStyles, Typography } from "@material-ui/core";
 const useStyles = makeStyles(({
     card: {
         width: 370,
-        margin: 15,
+        margin: 20,
         padding: 15,
         textAlign: "center",
         alignSelf: "baseline",

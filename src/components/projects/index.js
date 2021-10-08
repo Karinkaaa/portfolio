@@ -8,12 +8,11 @@ const useStyles = makeStyles(({
     root: {
         minHeight: "100vh",
         minWidth: "100vh",
-        background: "linear-gradient(to right, #010C28FF, #022323FF);"
+        background: "linear-gradient(to right, #010C28FF, #022323FF);",
+        padding: "0 150px"
     },
     div: {
-        paddingTop: 50,
-        display: "flex",
-        flexFlow: "wrap"
+        display: "flex"
     }
 }));
 
@@ -22,7 +21,6 @@ const Projects = ({ projects }) => {
 
     return (
         <div id={"projects"} className={classes.root}>
-            <Container>
                 <ColorfulText text={"Projects"}/>
 
                 <div className={classes.div}>
@@ -38,7 +36,6 @@ const Projects = ({ projects }) => {
                         ))
                     }
                 </div>
-            </Container>
         </div>
     );
 };
