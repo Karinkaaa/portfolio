@@ -23,12 +23,13 @@ const useStyles = makeStyles(({
         }
     },
     title: {
+        textDecoration: "none",
         fontWeight: 600,
         fontSize: 32,
         color: "rgb(255,226,0)",
 
         "&:hover": {
-            color: "#0edb7e",
+            color: "#f44336",
             cursor: "pointer"
         }
     },
@@ -58,7 +59,7 @@ const Project = ({ link, title, subtitle, technologies }) => {
         <CardContent className={classes.card}>
             <a
                 className={classes.title}
-                onClick={() => window.open(link)}
+                href={link}
             >
                 {title}
             </a>

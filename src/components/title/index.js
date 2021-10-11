@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, makeStyles } from "@material-ui/core";
 import Contact from "../contact";
+import { NAME, POSITION } from "../../utils/info";
 
 const useStyles = makeStyles(({
     root: {
@@ -34,11 +35,11 @@ const Title = () => {
     return (
         <Container className={classes.root}>
             <Box className={classes.name}>
-                Kharina Karyna
+                {NAME}
             </Box>
 
             <Box className={classes.position}>
-                JavaScript Developer
+                {POSITION}
             </Box>
 
             <Contact/>

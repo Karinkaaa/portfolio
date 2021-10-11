@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import ColorfulText from "../colorfulText";
 import Project from "./Project";
 import ProjectItems from "../../utils/projects";
+import { PROJECTS_ID } from "../../utils/ids";
+import { COLORFUL_TEXT_PROJECTS } from "../../utils/colorfulText";
 
 const useStyles = makeStyles(({
     root: {
@@ -20,22 +22,22 @@ const Projects = ({ projects }) => {
     const classes = useStyles();
 
     return (
-        <div id={"projects"} className={classes.root}>
-                <ColorfulText text={"Projects"}/>
+        <div id={PROJECTS_ID} className={classes.root}>
+            <ColorfulText text={COLORFUL_TEXT_PROJECTS}/>
 
-                <div className={classes.div}>
-                    {
-                        projects.map(({ link, title, subtitle, technologies }) => (
-                            <Project
-                                id={link}
-                                link={link}
-                                title={title}
-                                subtitle={subtitle}
-                                technologies={technologies}
-                            />
-                        ))
-                    }
-                </div>
+            <div className={classes.div}>
+                {
+                    projects.map(({ link, title, subtitle, technologies }) => (
+                        <Project
+                            id={link}
+                            link={link}
+                            title={title}
+                            subtitle={subtitle}
+                            technologies={technologies}
+                        />
+                    ))
+                }
+            </div>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { MAIN_ID } from "../utils/ids";
 
 const App3D = () => {
     let camera, scene, renderer, material;
@@ -48,7 +49,7 @@ const App3D = () => {
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-        document.getElementById("main").appendChild(renderer.domElement);
+        document.getElementById(MAIN_ID).appendChild(renderer.domElement);
         document.body.style.touchAction = "none";
         document.body.addEventListener("pointermove", onPointerMove);
 

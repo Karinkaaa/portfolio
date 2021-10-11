@@ -1,6 +1,8 @@
 import React from "react";
 import { AppBar, CssBaseline, makeStyles, Toolbar } from "@material-ui/core";
-import { yellow } from "@material-ui/core/colors";
+import { NAME } from "../../utils/info";
+import { PROJECTS_ID, SKILLS_ID } from "../../utils/ids";
+import { MAIN_HREF, PROJECTS_HREF, SKILLS_HREF } from "../../utils/hrefs";
 
 const useStyles = makeStyles(({
     root: {
@@ -41,25 +43,25 @@ const AppBarComponent = () => {
                     <div className={classes.div}>
                         <a
                             className={classes.a}
-                            href={"#main"}
+                            href={MAIN_HREF}
                         >
-                            Kharina Karyna
+                            {NAME}
                         </a>
                     </div>
 
                     <a
                         className={classes.a}
-                        href={"#skills"}
+                        href={SKILLS_HREF}
                     >
-                        Skills
+                        {SKILLS_ID}
                     </a>
 
                     <a
                         className={classes.a}
                         style={{ marginLeft: 55 }}
-                        href={"#projects"}
+                        href={PROJECTS_HREF}
                     >
-                        Projects
+                        {PROJECTS_ID}
                     </a>
                 </Toolbar>
             </AppBar>

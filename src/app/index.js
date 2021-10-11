@@ -4,6 +4,7 @@ import AppBarComponent from "../components/appBar";
 import Title from "../components/title";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import { MAIN_ID } from "../utils/ids";
 
 const App = () => {
     useEffect(() => {
@@ -12,7 +13,7 @@ const App = () => {
 
     return (
         <div>
-            <div id={"main"}>
+            <div id={MAIN_ID}>
                 <AppBarComponent/>
                 <Title/>
             </div>
