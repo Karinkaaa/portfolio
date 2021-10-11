@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, makeStyles } from "@material-ui/core";
 import ColorfulText from "../colorfulText";
 import Skill from "./Skill";
@@ -45,6 +46,16 @@ const Skills = ({ skills }) => {
 
 Skills.defaultProps = {
     skills: SkillItems
+};
+
+Skills.propTypes = {
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            link: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired
+        }).isRequired
+    ).isRequired
 };
 
 export default Skills;

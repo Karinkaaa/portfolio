@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core";
 import ColorfulText from "../colorfulText";
 import Project from "./Project";
@@ -44,6 +45,17 @@ const Projects = ({ projects }) => {
 
 Projects.defaultProps = {
     projects: ProjectItems
+};
+
+Projects.propTypes = {
+    projects: PropTypes.arrayOf(
+        PropTypes.shape({
+            link: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            subtitle: PropTypes.string.isRequired,
+            technologies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
+        }).isRequired
+    ).isRequired
 };
 
 export default Projects;

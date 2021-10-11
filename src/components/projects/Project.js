@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { CardContent, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(({
@@ -77,6 +78,13 @@ const Project = ({ link, title, subtitle, technologies }) => {
             }
         </CardContent>
     );
+};
+
+Project.propTypes = {
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };
 
 export default Project;

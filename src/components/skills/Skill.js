@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(({
@@ -48,6 +49,12 @@ const Skill = ({ link, title, alt }) => {
         </div>
 
     );
+};
+
+Skill.propTypes = {
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired
 };
 
 export default Skill;

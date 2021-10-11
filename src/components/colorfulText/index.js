@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./index.css";
 
 const ColorfulText = ({ text }) => {
@@ -21,6 +22,10 @@ const ColorfulText = ({ text }) => {
             </svg>
         </div>
     );
+};
+
+ColorfulText.propTypes = {
+    text: PropTypes.string.isRequired
 };
 
 export default ColorfulText;
