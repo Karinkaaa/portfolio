@@ -1,41 +1,50 @@
+import javascript from "../assets/javascript.png";
+import react from "../assets/react.png";
+import redux from "../assets/redux.svg";
+import reduxSaga from "../assets/redux-saga.svg";
+import materialUi from "../assets/material-ui.svg";
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
+import git from "../assets/git.svg";
+
 const SkillItems = [
     {
-        link: "/javascript.png",
+        link: javascript,
         title: "JavaScript",
         alt: "javascript"
     },
     {
-        link: "/react.png",
+        link: react,
         title: "React",
         alt: "react"
     },
     {
-        link: "/redux.svg",
+        link: redux,
         title: "Redux",
         alt: "redux"
     },
     {
-        link: "/redux-saga.svg",
+        link: reduxSaga,
         title: "Redux Saga",
         alt: "redux-saga"
     },
     {
-        link: "/material-ui.svg",
+        link: materialUi,
         title: "Material UI",
         alt: "material-ui"
     },
     {
-        link: "/html.svg",
+        link: html,
         title: "HTML",
         alt: "html"
     },
     {
-        link: "/css.svg",
+        link: css,
         title: "CSS",
         alt: "css"
     },
     {
-        link: "/git.svg",
+        link: git,
         title: "Git",
         alt: "git"
     }

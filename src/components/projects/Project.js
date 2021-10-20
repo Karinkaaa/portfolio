@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { CardContent, makeStyles, Typography } from "@material-ui/core";
+import Technologies from "./Technologies";
 
-const useStyles = makeStyles(({
-    card: {
+const useStyles = makeStyles({
+    root: {
         width: 370,
         margin: 20,
         padding: 15,
@@ -37,27 +38,14 @@ const useStyles = makeStyles(({
     subtitle: {
         fontSize: 20,
         padding: "10px 0"
-    },
-    span: {
-        display: "inline-block",
-        background: "#327dabd1",
-        color: "#fff",
-        fontFamily: "monospace",
-        fontVariantCaps: "normal",
-        textTransform: "lowercase",
-        fontSize: 15,
-        margin: 5,
-        padding: 8,
-        borderRadius: "10%",
-        boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)"
     }
-}));
+});
 
 const Project = ({ link, title, subtitle, technologies }) => {
     const classes = useStyles();
 
     return (
-        <CardContent className={classes.card}>
+        <CardContent className={classes.root}>
             <a
                 className={classes.title}
                 href={link}
@@ -69,13 +57,7 @@ const Project = ({ link, title, subtitle, technologies }) => {
                 {subtitle}
             </Typography>
 
-            {
-                technologies.map((technology) => (
-                    <Typography id={link} className={classes.span}>
-                        {technology}
-                    </Typography>
-                ))
-            }
+            <Technologies technologies={technologies}/>
         </CardContent>
     );
 };

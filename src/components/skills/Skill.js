@@ -12,7 +12,7 @@ const useStyles = makeStyles(({
         transition: "1s",
 
         "&:hover": {
-            transform: "scale(1.15)"
+            transform: "scale(1.2)"
         }
     },
     img: {

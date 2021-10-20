@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { MAIN_ID } from "../utils/ids";
+import disc from "../assets/disc.png";
 
 const App3D = () => {
     let camera, scene, renderer, material;
@@ -21,7 +22,7 @@ const App3D = () => {
 
         const geometry = new THREE.BufferGeometry();
         const vertices = [];
-        const sprite = new THREE.TextureLoader().load("/disc.png");
+        const sprite = new THREE.TextureLoader().load(disc);
 
         for (let i = 0; i < 1000; i++) {
             const x = 2000 * Math.random() - 1000;

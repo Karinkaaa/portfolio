@@ -31,7 +31,7 @@ const Skills = ({ skills }) => {
                     {
                         skills.map(({ link, title, alt }) => (
                             <Skill
-                                id={alt}
+                                key={alt}
                                 link={link}
                                 title={title}
                                 alt={alt}

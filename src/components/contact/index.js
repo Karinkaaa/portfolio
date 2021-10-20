@@ -7,7 +7,10 @@ const Contact = ({ contacts }) => (
     <Container>
         {
             contacts.map(({ link, Icon }) => (
-                <IconButton onClick={() => window.open(link)}>
+                <IconButton
+                    key={link}
+                    onClick={() => window.open(link)}
+                >
                     <Icon/>
                 </IconButton>
             ))

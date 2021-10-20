@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core";
-import ColorfulText from "../colorfulText";
 import Project from "./Project";
+import ColorfulText from "../colorfulText";
 import ProjectItems from "../../utils/projects";
 import { PROJECTS_ID } from "../../utils/ids";
 import { COLORFUL_TEXT_PROJECTS } from "../../utils/colorfulText";
@@ -30,7 +30,7 @@ const Projects = ({ projects }) => {
                 {
                     projects.map(({ link, title, subtitle, technologies }) => (
                         <Project
-                            id={link}
+                            key={link}
                             link={link}
                             title={title}
                             subtitle={subtitle}
