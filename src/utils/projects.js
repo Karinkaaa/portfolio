@@ -6,7 +6,7 @@ const ProjectItems = [
         technologies: ["THREE.js", "JavaScript", "React", "Material UI", "HTML", "CSS"]
     },
     {
-        link: "https://github.com/Karinkaaa/Stamina",
+        link: "https://karinkaaa.github.io/Stamina/",
         title: "Stamina",
         subtitle: "Online program for mastering ten-finger typing and touch typing",
         technologies: ["JavaScript", "React", "Material UI", "HTML", "CSS"]
@@ -26,7 +26,7 @@ const ProjectItems = [
     {
         link: "https://github.com/Karinkaaa/WebBooks",
         title: "WebBooks",
-        subtitle: "Development of the admin part for the Spinner game",
+        subtitle: "Home project for learning Java, Spring and JSP",
         technologies: ["Java", "Spring", "Maven", "JSP", "HTML", "CSS"]
     }
 ];
