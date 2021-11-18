@@ -3,29 +3,34 @@ import { Box, Container, makeStyles } from "@material-ui/core";
 import Contact from "../contact";
 import { NAME, POSITION } from "../../utils/info";
 
-const useStyles = makeStyles(({
+const useStyles = makeStyles((theme) => ({
     root: {
         position: "absolute",
-        zIndex: 10,
+        minWidth: 200,
         maxWidth: "fit-content",
-        margin: "12% 0 0 65%",
         padding: 25,
+        top: "25%",
+        right: "10%",
         textAlign: "end",
         color: "white",
-        backdropFilter: "blur(20px)",
-        borderRadius: 50
+        borderRadius: 50,
+        backdropFilter: "blur(20px)"
     },
     name: {
-        fontVariantCaps: "small-caps",
         fontWeight: 700,
-        fontSize: 55
+        fontSize: 55,
+        [theme.breakpoints.down("sm")]: {
+            fontSize: 28
+        }
     },
     position: {
-        fontVariantCaps: "small-caps",
         fontWeight: 600,
         fontSize: 40,
         paddingBottom: 20,
-        color: "#FFE200FF"
+        color: "#FFE200FF",
+        [theme.breakpoints.down("sm")]: {
+            fontSize: 20
+        }
     }
 }));
 

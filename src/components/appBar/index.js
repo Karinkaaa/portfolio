@@ -18,8 +18,8 @@ const useStyles = makeStyles(({
     divName: {
         flexGrow: 1
     },
-    divProjects: {
-        marginLeft: 55
+    div: {
+        marginLeft: "5vw"
     }
 }));
 
@@ -36,9 +36,11 @@ const AppBarComponent = () => {
                         <AppBarReference href={MAIN_HREF} name={NAME}/>
                     </div>
 
-                    <AppBarReference href={SKILLS_HREF} name={SKILLS_ID}/>
+                    <div className={classes.div}>
+                        <AppBarReference href={SKILLS_HREF} name={SKILLS_ID}/>
+                    </div>
 
-                    <div className={classes.divProjects}>
+                    <div className={classes.div}>
                         <AppBarReference href={PROJECTS_HREF} name={PROJECTS_ID}/>
                     </div>
                 </Toolbar>

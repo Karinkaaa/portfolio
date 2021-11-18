@@ -3,25 +3,25 @@ import PropTypes from "prop-types";
 import { CardContent, makeStyles, Typography } from "@material-ui/core";
 import Technologies from "./Technologies";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
-        width: 370,
+        width: 350,
         margin: 20,
         padding: 15,
         textAlign: "center",
         alignSelf: "baseline",
         background: "#8bc0a726",
         color: "rgba(255,255,255,0.91)",
-        fontVariantCaps: "small-caps",
-        textTransform: "capitalize",
         boxShadow: "0 0 5px whitesmoke",
         borderRadius: "2%",
-
         "&:hover": {
             boxShadow: "0 0 10px cyan"
         },
         "&:last-child": {
             paddingBottom: 15
+        },
+        [theme.breakpoints.down("sm")]: {
+            width: 250
         }
     },
     title: {
@@ -29,17 +29,22 @@ const useStyles = makeStyles({
         fontWeight: 600,
         fontSize: 32,
         color: "rgb(255,226,0)",
-
         "&:hover": {
             color: "#f44336",
             cursor: "pointer"
+        },
+        [theme.breakpoints.down("sm")]: {
+            fontSize: 22
         }
     },
     subtitle: {
         fontSize: 20,
-        padding: "10px 0"
+        padding: "10px 0",
+        [theme.breakpoints.down("sm")]: {
+            fontSize: 16
+        }
     }
-});
+}));
 
 const Project = ({ link, title, subtitle, technologies }) => {
     const classes = useStyles();

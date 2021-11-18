@@ -10,12 +10,14 @@ import { COLORFUL_TEXT_PROJECTS } from "../../utils/colorfulText";
 const useStyles = makeStyles(({
     root: {
         minHeight: "100vh",
-        minWidth: "100vh",
+        minWidth: "100%",
         background: "linear-gradient(to right, #010C28FF, #022323FF);",
-        padding: "0 150px"
+        padding: "0 4%"
     },
     div: {
-        display: "flex"
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center"
     }
 }));
 

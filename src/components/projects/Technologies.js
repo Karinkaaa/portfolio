@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles, Typography } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     typo: {
         display: "inline-block",
         background: "#327dabd1",
@@ -14,9 +14,14 @@ const useStyles = makeStyles({
         margin: 5,
         padding: 8,
         borderRadius: "10%",
-        boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)"
+        boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
+        [theme.breakpoints.down("sm")]: {
+            fontSize: 12,
+            margin: 3,
+            padding: 5
+        }
     }
-});
+}));
 
 const Technologies = ({ technologies }) => {
     const classes = useStyles();

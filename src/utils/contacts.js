@@ -1,24 +1,18 @@
 import { GITHUB, LINKED_IN, TELEGRAM } from "./links";
 import { GitHub, LinkedIn, Telegram } from "@material-ui/icons";
 
-const iconStyle = {
-    fontSize: "xx-large",
-    color: "white",
-    marginLeft: "20px"
-};
-
 const ContactItems = [
     {
         link: TELEGRAM,
-        Icon: () => <Telegram style={iconStyle}/>
+        Icon: ({ classes }) => <Telegram className={classes.icon}/>
     },
     {
         link: LINKED_IN,
-        Icon: () => <LinkedIn style={iconStyle}/>
+        Icon: ({ classes }) => <LinkedIn className={classes.icon}/>
     },
     {
         link: GITHUB,
-        Icon: () => <GitHub style={iconStyle}/>
+        Icon: ({ classes }) => <GitHub className={classes.icon}/>
     }
 ];
 
