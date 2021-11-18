@@ -15,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down("sm")]: {
             width: 150,
-            margin: 2
+            margin: 2,
+            "&:hover": {
+                transform: "scale(1)"
+            }
         }
     },
     img: {

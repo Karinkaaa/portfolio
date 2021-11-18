@@ -20,7 +20,7 @@ const ProjectItems = [
     {
         link: "http://product-react-app-prod.herokuapp.com/",
         title: "Products",
-        subtitle: "Development of the site for creating, editing, deleting products",
+        subtitle: "Home project for learning JavaScript, React and Redux",
         technologies: ["JavaScript", "React", "Redux", "Redux-Saga", "Material UI", "HTML", "CSS"]
     },
     {

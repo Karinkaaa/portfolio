@@ -17,9 +17,6 @@ const useStyles = makeStyles({
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center"
-    },
-    container: {
-        padding: 0
     }
 });
 
@@ -28,7 +25,7 @@ const Skills = ({ skills }) => {
 
     return (
         <div id={SKILLS_ID} className={classes.root}>
-            <Container className={classes.container}>
+            <Container>
                 <ColorfulText text={COLORFUL_TEXT_SKILLS}/>
 
                 <div className={classes.div}>

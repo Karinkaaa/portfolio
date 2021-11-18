@@ -53,8 +53,8 @@
 }
 
 .my-svg {
-    margin: 8% 20%;
-    dominant-baseline: hanging;
+    margin: 10% 20% 5%;
+    dominant-baseline: mathematical;
     width: 100%;
     height: 100%;
     font: 8.5em Open Sans, Impact;
@@ -63,9 +63,10 @@
 
 @media (max-width: 960px) {
     .my-svg {
-        margin: 10% 0 0 0;
+        margin: 23% 0 0;
         width: 165%;
-        font-size: 5em;
+        height: 15vh;
+        font-size: 4.5em;
     }
 
     .text {

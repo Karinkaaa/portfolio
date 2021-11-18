@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 import Project from "./Project";
 import ColorfulText from "../colorfulText";
 import ProjectItems from "../../utils/projects";
@@ -12,7 +12,7 @@ const useStyles = makeStyles(({
         minHeight: "100vh",
         minWidth: "100%",
         background: "linear-gradient(to right, #010C28FF, #022323FF);",
-        padding: "0 4%"
+        padding: "0 4% 4%"
     },
     div: {
         display: "flex",
@@ -26,21 +26,23 @@ const Projects = ({ projects }) => {
 
     return (
         <div id={PROJECTS_ID} className={classes.root}>
-            <ColorfulText text={COLORFUL_TEXT_PROJECTS}/>
+            <Container>
+                <ColorfulText text={COLORFUL_TEXT_PROJECTS}/>
 
-            <div className={classes.div}>
-                {
-                    projects.map(({ link, title, subtitle, technologies }) => (
-                        <Project
-                            key={link}
-                            link={link}
-                            title={title}
-                            subtitle={subtitle}
-                            technologies={technologies}
-                        />
-                    ))
-                }
-            </div>
+                <div className={classes.div}>
+                    {
+                        projects.map(({ link, title, subtitle, technologies }) => (
+                            <Project
+                                key={link}
+                                link={link}
+                                title={title}
+                                subtitle={subtitle}
+                                technologies={technologies}
+                            />
+                        ))
+                    }
+                </div>
+            </Container>
         </div>
     );
 };

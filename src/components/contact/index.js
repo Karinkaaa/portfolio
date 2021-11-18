@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
             color: "rgb(255,226,0)"
         },
         [theme.breakpoints.down("sm")]: {
-            fontSize: "large",
+            fontSize: "x-large",
             marginLeft: 10
         }
     }
