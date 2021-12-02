@@ -1,5 +1,11 @@
 const ProjectItems = [
     {
+        link: "https://karinkaaa.github.io/News/",
+        title: "News",
+        subtitle: "Integration with an external server",
+        technologies: ["JavaScript", "React", "Redux", "Redux-Saga", "Material UI", "HTML", "CSS"]
+    },
+    {
         link: "https://karinkaaa.github.io/portfolio/",
         title: "Portfolio",
         subtitle: "Development of my portfolio site",
