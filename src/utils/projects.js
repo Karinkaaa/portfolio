@@ -24,7 +24,7 @@ const ProjectItems = [
         technologies: ["JavaScript", "React", "Redux", "Redux-Saga", "Mirage.js", "Faker", "Material UI", "HTML", "CSS"]
     },
     {
-        link: "http://product-react-app-prod.herokuapp.com/",
+        link: "https://karinkaaa.github.io/Products-front/",
         title: "Products",
         subtitle: "Home project for learning JavaScript, React and Redux",
         technologies: ["JavaScript", "React", "Redux", "Redux-Saga", "Material UI", "HTML", "CSS"]
