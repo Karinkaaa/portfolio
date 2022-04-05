@@ -1,5 +1,11 @@
 const ProjectItems = [
     {
+        link: "https://bsa-growup.herokuapp.com/",
+        title: "GrowUp",
+        subtitle: "Employee resourcing platform that connects open work opportunities with best-fit internal talent",
+        technologies: ["TypeScript", "React", "Redux", "Bootstrap", "HTML", "SCSS"]
+    },
+    {
         link: "https://karinkaaa.github.io/News/",
         title: "News",
         subtitle: "Integration with an external server",
