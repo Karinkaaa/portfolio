@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         display: "grid",
         textAlign: "center",
         justifyItems: "center",
-        width: 250,
+        width: 195,
         margin: "2%",
         transition: "1s",
         "&:hover": {
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
     img: {
         width: "fit-content",
-        height: 135,
+        height: 120,
         [theme.breakpoints.down("sm")]: {
             height: 75
         }
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         fontWeight: 600,
-        fontSize: 20,
+        fontSize: 18,
         color: "#fff",
         margin: 10,
         [theme.breakpoints.down("sm")]: {
