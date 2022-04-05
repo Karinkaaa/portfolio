@@ -1,2 +1,2 @@
 export const NAME = "Kharina Karyna";
-export const POSITION = "JavaScript Developer";
+export const POSITION = "Frontend Developer";
