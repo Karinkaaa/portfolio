@@ -3,9 +3,9 @@
 #### Preview:
 ![alt text](https://github.com/Karinkaaa/portfolio/blob/master/public/preview.png?raw=true)
 
-# Getting Started with Create React Index
+# Getting Started with Create React App
 
-This project was bootstrapped with [Create React Index](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
