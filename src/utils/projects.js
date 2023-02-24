@@ -1,11 +1,5 @@
 const ProjectItems = [
     {
-        link: "https://bsa-growup.herokuapp.com/",
-        title: "GrowUp",
-        subtitle: "Employee resourcing platform that connects open work opportunities with best-fit internal talent",
-        technologies: ["TypeScript", "React", "Redux", "Bootstrap", "HTML", "SCSS"]
-    },
-    {
         link: "https://karinkaaa.github.io/News/",
         title: "News",
         subtitle: "Integration with an external server",
@@ -35,12 +29,6 @@ const ProjectItems = [
         subtitle: "Home project for learning JavaScript, React and Redux",
         technologies: ["JavaScript", "React", "Redux", "Redux-Saga", "Material UI", "HTML", "CSS"]
     },
-    {
-        link: "https://github.com/Karinkaaa/WebBooks",
-        title: "WebBooks",
-        subtitle: "Home project for learning Java, Spring and JSP",
-        technologies: ["Java", "Spring", "Maven", "JSP", "HTML", "CSS"]
-    }
 ];
 
 export default ProjectItems;
