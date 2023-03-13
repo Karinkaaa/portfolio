@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         top: "25%",
         right: "10%",
         textAlign: "end",
-        color: "white",
+        color: "#0057b7",
         borderRadius: 50,
         backdropFilter: "blur(20px)"
     },
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 600,
         fontSize: 40,
         paddingBottom: 20,
-        color: "#FFE200FF",
+        color: "#ffd700",
         [theme.breakpoints.down("sm")]: {
             fontSize: 20
         }
