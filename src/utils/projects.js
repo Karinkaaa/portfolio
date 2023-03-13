@@ -1,4 +1,10 @@
 const ProjectItems = [
+     {
+        link: "https://karinkaaa.github.io/todo-list/",
+        title: "Todo List",
+        subtitle: "Web application for task management",
+        technologies: ["TypeScript", "React", "Redux", "Redux-Toolkit", "Material UI", "HTML", "CSS"]
+    },
     {
         link: "https://karinkaaa.github.io/News/",
         title: "News",
