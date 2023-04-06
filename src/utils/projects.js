@@ -1,7 +1,21 @@
 const ProjectItems = [
   {
+    link: "https://karinkaaa.github.io/todo-list/",
+    title: "Todo List (in progress)",
+    subtitle: "Web application for task management",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Redux-Toolkit",
+      "Material UI",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
     link: "https://rick-and-morty-characters-web.netlify.app/",
-    title: "Rick And Morty Characters",
+    title: "Rick And Morty",
     subtitle: "Rick and Morty character viewer web application",
     technologies: [
       "TypeScript",
@@ -13,20 +27,6 @@ const ProjectItems = [
       "HTML",
       "CSS",
       "Google OAuth2",
-    ],
-  },
-  {
-    link: "https://karinkaaa.github.io/todo-list/",
-    title: "Todo List",
-    subtitle: "Web application for task management",
-    technologies: [
-      "TypeScript",
-      "React",
-      "Redux",
-      "Redux-Toolkit",
-      "Material UI",
-      "HTML",
-      "CSS",
     ],
   },
   {

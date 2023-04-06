@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Container, makeStyles } from "@material-ui/core";
+import PropTypes from "prop-types";
+import React from "react";
+import { COLORFUL_TEXT_SKILLS } from "../../utils/colorfulText";
+import { SKILLS_ID } from "../../utils/ids";
+import SkillItems from "../../utils/skills";
 import ColorfulText from "../colorfulText";
 import Skill from "./Skill";
-import SkillItems from "../../utils/skills";
-import { SKILLS_ID } from "../../utils/ids";
-import { COLORFUL_TEXT_SKILLS } from "../../utils/colorfulText";
 
 const useStyles = makeStyles({
     root: {

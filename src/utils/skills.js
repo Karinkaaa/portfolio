@@ -2,7 +2,6 @@ import javascript from "../assets/javascript.png";
 import typescript from "../assets/typescript.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.svg";
-import reduxSaga from "../assets/redux-saga.svg";
 import materialUi from "../assets/material-ui.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
@@ -28,11 +27,6 @@ const SkillItems = [
         link: redux,
         title: "Redux",
         alt: "redux"
-    },
-    {
-        link: reduxSaga,
-        title: "Redux Saga",
-        alt: "redux-saga"
     },
     {
         link: materialUi,

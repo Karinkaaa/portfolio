@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         justifyItems: "center",
         width: 195,
-        margin: "2%",
+        margin: "2% 3%",
         transition: "1s",
         "&:hover": {
             transform: "scale(1.2)"
