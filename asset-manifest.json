@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a605b10f.chunk.css",
-    "main.js": "/portfolio/static/js/main.c4ff0efb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c4ff0efb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b580f60c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b580f60c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.47c37bb6.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.47c37bb6.js.map",
     "static/js/2.ce885e18.chunk.js": "/portfolio/static/js/2.ce885e18.chunk.js",
@@ -15,7 +15,6 @@
     "static/media/html.f318c8b1.svg": "/portfolio/static/media/html.f318c8b1.svg",
     "static/media/material-ui.fd510ed8.svg": "/portfolio/static/media/material-ui.fd510ed8.svg",
     "static/media/react.9c7af2ed.png": "/portfolio/static/media/react.9c7af2ed.png",
-    "static/media/redux-saga.7020de63.svg": "/portfolio/static/media/redux-saga.7020de63.svg",
     "static/media/redux.0e4fb1c8.svg": "/portfolio/static/media/redux.0e4fb1c8.svg",
     "static/media/typescript.eeb913e1.png": "/portfolio/static/media/typescript.eeb913e1.png"
   },
@@ -23,6 +22,6 @@
     "static/js/runtime-main.47c37bb6.js",
     "static/js/2.ce885e18.chunk.js",
     "static/css/main.a605b10f.chunk.css",
-    "static/js/main.c4ff0efb.chunk.js"
+    "static/js/main.b580f60c.chunk.js"
   ]
 }
