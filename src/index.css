@@ -1,12 +1,12 @@
 div {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
-    background-color: rgb(41, 44, 1);
+  width: 4px;
+  background-color: rgb(41, 44, 1);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: yellow;
+  background-color: yellow;
 }
