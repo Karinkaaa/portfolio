@@ -5,16 +5,16 @@ import React from "react";
 const useStyles = makeStyles((theme) => ({
   typo: {
     display: "inline-block",
-    background: "#327dabd1",
-    color: "white",
+    background: "transparent",
+    color: "black",
     fontFamily: "monospace",
     fontVariantCaps: "normal",
     textTransform: "lowercase",
     fontSize: 15,
     margin: 5,
-    padding: 8,
+    padding: "8px 10px",
     borderRadius: "10%",
-    boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
+    boxShadow: "inset 0 0 5px #00428b",
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,
       margin: 3,

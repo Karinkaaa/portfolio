@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   root: {
     minHeight: "100vh",
     minWidth: "100%",
-    background: "#141617",
+    background: "linear-gradient(#010512, #00428b)",
     padding: "0 4% 4%",
   },
   div: {

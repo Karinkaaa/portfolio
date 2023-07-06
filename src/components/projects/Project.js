@@ -1,6 +1,7 @@
-import { CardContent, makeStyles, Typography } from "@material-ui/core";
+import { CardActionArea, makeStyles, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
 import React from "react";
+import { BLUE } from "../../utils/colors";
 import Technologies from "./Technologies";
 
 const useStyles = makeStyles((theme) => ({
@@ -10,12 +11,14 @@ const useStyles = makeStyles((theme) => ({
     padding: 15,
     textAlign: "center",
     alignSelf: "baseline",
-    background: "#8bc0a726",
-    color: "rgba(255,255,255,0.91)",
+    background: "#c6e7fb",
+    color: "black",
     boxShadow: "0 0 5px whitesmoke",
     borderRadius: "2%",
     "&:hover": {
-      boxShadow: "0 0 10px cyan",
+      cursor: "pointer",
+      background: "white",
+      boxShadow: "0 5px 0 #c40041",
     },
     "&:last-child": {
       paddingBottom: 15,
@@ -28,11 +31,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     fontWeight: 600,
     fontSize: 32,
-    color: "rgb(255,226,0)",
-    "&:hover": {
-      color: "#f44336",
-      cursor: "pointer",
-    },
+    color: BLUE,
     [theme.breakpoints.down("sm")]: {
       fontSize: 22,
     },
@@ -50,15 +49,13 @@ const Project = ({ link, title, subtitle, technologies }) => {
   const classes = useStyles();
 
   return (
-    <CardContent className={classes.root}>
-      <a className={classes.title} href={link}>
-        {title}
-      </a>
+    <CardActionArea className={classes.root} href={link}>
+      <Typography className={classes.title}>{title}</Typography>
       <Typography className={classes.subtitle} gutterBottom>
         {subtitle}
       </Typography>
       <Technologies technologies={technologies} />
-    </CardContent>
+    </CardActionArea>
   );
 };
 
