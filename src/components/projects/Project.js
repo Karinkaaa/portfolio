@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 15,
     textAlign: "center",
     alignSelf: "baseline",
-    background: "#c6e7fb",
+    background: "#e4f5ff",
     color: "black",
     boxShadow: "0 0 5px whitesmoke",
     borderRadius: "2%",
@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     fontWeight: 600,
     fontSize: 32,
+    lineHeight: "initial",
     color: BLUE,
     [theme.breakpoints.down("sm")]: {
       fontSize: 22,
