@@ -3,7 +3,7 @@ import { KeyboardArrowDown } from "@material-ui/icons";
 import React from "react";
 import { YELLOW } from "../../utils/colors";
 import { PROJECTS_HREF } from "../../utils/hrefs";
-import { PROJECTS_ID } from "../../utils/ids";
+import { PROJECTS } from "../../utils/ids";
 
 const useStyles = makeStyles({
   arrow: {
@@ -37,7 +37,7 @@ export const ArrowDownButton = () => {
       href={PROJECTS_HREF}
       onClick={() => {
         document
-          .getElementById(PROJECTS_ID)
+          .getElementById(PROJECTS)
           .scrollIntoView({ behavior: "smooth" });
       }}
     >

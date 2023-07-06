@@ -1,2 +1,2 @@
-export const MAIN_ID = "main";
-export const PROJECTS_ID = "projects";
+export const INFO = "info";
+export const PROJECTS = "projects";

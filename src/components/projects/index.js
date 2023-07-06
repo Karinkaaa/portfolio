@@ -1,7 +1,7 @@
 import { Container, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
 import React from "react";
-import { PROJECTS_ID } from "../../utils/ids";
+import { PROJECTS } from "../../utils/ids";
 import ProjectItems from "../../utils/projects";
 import Project from "./Project";
 
@@ -29,7 +29,7 @@ const Projects = ({ projects }) => {
   const classes = useStyles();
 
   return (
-    <div id={PROJECTS_ID} className={classes.root}>
+    <div id={PROJECTS} className={classes.root}>
       <Toolbar />
       <Container>
         <div className={classes.div}>

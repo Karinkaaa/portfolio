@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import disc from "../assets/disc.png";
-import { MAIN_ID } from "../utils/ids";
+import { INFO } from "../utils/ids";
 
 const App3D = () => {
   let camera, scene, renderer, material;
@@ -59,7 +59,7 @@ const App3D = () => {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    document.getElementById(MAIN_ID).appendChild(renderer.domElement);
+    document.getElementById(INFO).appendChild(renderer.domElement);
     document.body.style.touchAction = "none";
     document.body.addEventListener("pointermove", onPointerMove);
 

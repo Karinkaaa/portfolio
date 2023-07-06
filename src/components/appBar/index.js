@@ -1,6 +1,6 @@
 import { AppBar, CssBaseline, makeStyles, Toolbar } from "@material-ui/core";
 import React from "react";
-import { MAIN_HREF } from "../../utils/hrefs";
+import { INFO_HREF } from "../../utils/hrefs";
 import { NAME } from "../../utils/info";
 import AppBarReference from "./AppBarReference";
 
@@ -31,7 +31,7 @@ const AppBarComponent = () => {
       <AppBar>
         <Toolbar className={classes.toolbar}>
           <div className={classes.divName}>
-            <AppBarReference href={MAIN_HREF} name={NAME} />
+            <AppBarReference href={INFO_HREF} name={NAME} />
           </div>
         </Toolbar>
       </AppBar>
