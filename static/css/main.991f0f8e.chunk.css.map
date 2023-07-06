@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,IACE,iBACF,CAEA,oBACE,SAAU,CACV,wBACF,CAEA,0BACE,qBACF","file":"main.991f0f8e.chunk.css","sourcesContent":["div {\n  overflow-x: hidden;\n}\n\n::-webkit-scrollbar {\n  width: 4px;\n  background-color: rgb(41, 44, 1);\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: yellow;\n}\n"]}
