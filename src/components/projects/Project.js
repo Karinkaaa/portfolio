@@ -50,7 +50,7 @@ const Project = ({ link, title, subtitle, technologies }) => {
   const classes = useStyles();
 
   return (
-    <CardActionArea className={classes.root} href={link}>
+    <CardActionArea className={classes.root} href={link} target="_blank">
       <Typography className={classes.title}>{title}</Typography>
       <Typography className={classes.subtitle} gutterBottom>
         {subtitle}
