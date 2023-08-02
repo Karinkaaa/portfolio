@@ -1,5 +1,19 @@
 const ProjectItems = [
   {
+    link: "https://karinkaaa.github.io/pokedex/",
+    title: "Pokedex",
+    subtitle: "Pokemon characters viewer web application",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Redux-Toolkit",
+      "Material UI",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
     link: "https://karinkaaa.github.io/todo-list/",
     title: "Todo List (in progress)",
     subtitle: "Web application for task management",
@@ -16,7 +30,7 @@ const ProjectItems = [
   {
     link: "https://rick-and-morty-characters-web.netlify.app/",
     title: "Rick And Morty",
-    subtitle: "Rick and Morty character viewer web application",
+    subtitle: "Rick and Morty characters viewer web application",
     technologies: [
       "TypeScript",
       "React",
