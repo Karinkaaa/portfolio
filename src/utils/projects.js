@@ -14,6 +14,21 @@ const ProjectItems = [
     ],
   },
   {
+    link: "https://karinkaaa.github.io/github-board/",
+    title: "Github Board",
+    subtitle: "GitHub repo issues viewer",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Redux-Toolkit",
+      "React-Infinite-Scroll",
+      "Ant Design",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
     link: "https://karinkaaa.github.io/todo-list/",
     title: "Todo List (in progress)",
     subtitle: "Web application for task management",
