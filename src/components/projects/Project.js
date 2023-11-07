@@ -1,4 +1,4 @@
-import { CardActionArea, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
 import React from "react";
 import { BLUE } from "../../utils/colors";
@@ -6,57 +6,57 @@ import Technologies from "./Technologies";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 350,
-    margin: 20,
-    padding: 15,
+    margin: 15,
+    padding: 25,
     textAlign: "center",
     alignSelf: "baseline",
-    background: "#e4f5ff",
-    color: "black",
+    background: "whitesmoke",
     boxShadow: "0 0 5px whitesmoke",
-    borderRadius: "2%",
-    "&:hover": {
-      cursor: "pointer",
-      background: "white",
-      boxShadow: "0 5px 0 #c40041",
-    },
-    "&:last-child": {
-      paddingBottom: 15,
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: 250,
+    borderRadius: 10,
+    minHeight: 600,
+    [theme.breakpoints.down("md")]: {
+      minHeight: 550,
     },
   },
   title: {
+    marginTop: 15,
     textDecoration: "none",
     fontWeight: 600,
     fontSize: 32,
-    lineHeight: "initial",
     color: BLUE,
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 22,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 26,
     },
   },
   subtitle: {
     fontSize: 20,
     padding: "10px 0",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 18,
     },
+  },
+  img: {
+    height: "100%",
+    width: '100%',
+    borderRadius: 5,
+    boxShadow: "0 0 5px whitesmoke",
   },
 }));
 
-const Project = ({ link, title, subtitle, technologies }) => {
+const Project = ({ link, title, subtitle, technologies, image }) => {
   const classes = useStyles();
 
   return (
-    <CardActionArea className={classes.root} href={link} target="_blank">
-      <Typography className={classes.title}>{title}</Typography>
+    <Box className={classes.root}>
+      <img className={classes.img} src={image} alt={title} />
+      <Typography className={classes.title} href={link} target="_blank">
+        {title}
+      </Typography>
       <Typography className={classes.subtitle} gutterBottom>
         {subtitle}
       </Typography>
       <Technologies technologies={technologies} />
-    </CardActionArea>
+    </Box>
   );
 };
 
@@ -65,6 +65,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   technologies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default Project;

@@ -1,5 +1,6 @@
 import { GitHub, LinkedIn, Telegram } from "@material-ui/icons";
 import { GITHUB, LINKED_IN, TELEGRAM } from "./links";
+import React from 'react';
 
 const ContactItems = [
   {

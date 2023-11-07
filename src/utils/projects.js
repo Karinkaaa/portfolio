@@ -1,4 +1,30 @@
+import githubBoard from "../assets/github-board.png";
+import news from "../assets/news.png";
+import pokedex from "../assets/pokedex.png";
+import portfolio from "../assets/portfolio.png";
+import products from "../assets/products.png";
+import rickAndMorty from "../assets/rick-and-morty.png";
+import spinAdmin from "../assets/spin-admin.png";
+import stamina from "../assets/stamina.png";
+import todoList from "../assets/todo-list.png";
+
 const ProjectItems = [
+  {
+    link: "https://karinkaaa.github.io/todo-list/",
+    title: "Todo List",
+    subtitle: "Web application for task management",
+    technologies: [
+      "TypeScript",
+      "React",
+      "React Hook Form",
+      "Redux",
+      "Redux Toolkit",
+      "Material UI",
+      "HTML",
+      "CSS",
+    ],
+    image: todoList,
+  },
   {
     link: "https://karinkaaa.github.io/pokedex/",
     title: "Pokedex",
@@ -12,6 +38,7 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
+    image: pokedex,
   },
   {
     link: "https://karinkaaa.github.io/github-board/",
@@ -27,21 +54,7 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
-  },
-  {
-    link: "https://karinkaaa.github.io/todo-list/",
-    title: "Todo List",
-    subtitle: "Web application for task management",
-    technologies: [
-      "TypeScript",
-      "React",
-      "React Hook Form",
-      "Redux",
-      "Redux Toolkit",
-      "Material UI",
-      "HTML",
-      "CSS",
-    ],
+    image: githubBoard,
   },
   {
     link: "https://rick-and-morty-characters-web.netlify.app/",
@@ -53,11 +66,12 @@ const ProjectItems = [
       "React Router",
       "Redux",
       "Redux Toolkit",
+      "Google OAuth2",
       "Material UI",
       "HTML",
       "CSS",
-      "Google OAuth2",
     ],
+    image: rickAndMorty,
   },
   {
     link: "https://karinkaaa.github.io/News/",
@@ -72,6 +86,7 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
+    image: news,
   },
   {
     link: "https://karinkaaa.github.io/portfolio/",
@@ -85,12 +100,14 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
+    image: portfolio,
   },
   {
     link: "https://karinkaaa.github.io/Stamina/",
     title: "Stamina",
     subtitle: "Online program for mastering ten-finger typing and touch typing",
     technologies: ["JavaScript", "React", "Material UI", "HTML", "CSS"],
+    image: stamina,
   },
   {
     link: "https://karinkaaa.github.io/spin-admin-deploy",
@@ -107,6 +124,7 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
+    image: spinAdmin,
   },
   {
     link: "https://karinkaaa.github.io/Products-front/",
@@ -121,6 +139,7 @@ const ProjectItems = [
       "HTML",
       "CSS",
     ],
+    image: products,
   },
 ];
 

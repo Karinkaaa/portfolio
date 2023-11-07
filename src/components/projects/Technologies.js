@@ -5,20 +5,19 @@ import React from "react";
 const useStyles = makeStyles((theme) => ({
   typo: {
     display: "inline-block",
-    background: "transparent",
-    color: "black",
+    background: "white",
+    color: "darkblue",
     fontFamily: "monospace",
     fontVariantCaps: "normal",
     textTransform: "lowercase",
     fontSize: 15,
     margin: 5,
     padding: "8px 10px",
-    borderRadius: "10%",
-    boxShadow: "inset 0 0 5px #00428b",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 12,
-      margin: 3,
-      padding: 5,
+    borderRadius: 5,
+    boxShadow: "inset 0 0 5px royalblue",
+    [theme.breakpoints.down("md")]: {
+      margin: 5,
+      padding: 7,
     },
   },
 }));
